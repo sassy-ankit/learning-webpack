@@ -73,11 +73,14 @@
 "use strict";
 
 
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var sum = function sum(a, b) {
   return a + b;
 };
 
-module.exports = sum;
+exports.default = sum;
 
 /***/ },
 /* 1 */
@@ -86,9 +89,15 @@ module.exports = sum;
 "use strict";
 
 
-var SUM = __webpack_require__(0);
+var _sum = __webpack_require__(0);
 
-console.log('Sum of 1 and 2 is ' + SUM(1, 2));
+var _sum2 = _interopRequireDefault(_sum);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+//ES2015/ES6 syntax
+
+console.log('Sum of 1 and 2 is ' + (0, _sum2.default)(1, 2)); //var SUM = require('./sum');   //CommonJS syntax
 
 /***/ }
 /******/ ]);
