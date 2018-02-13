@@ -1,0 +1,33 @@
+{
+	"name": "003-loaders_handling_CSS",
+	"version": "1.0.0",
+	"description": "Getting started with loader",
+	"main": "app.js",
+	"scripts": {
+		"build": "webpack"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sassy-ankit/learning-webpack.git"
+	},
+	"keywords": [
+		"learning",
+		"webpack",
+		"loader",
+		"CSS"
+	],
+	"author": "Ankitkumar Chheda",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/sassy-ankit/learning-webpack/issues"
+	},
+	"homepage": "https://github.com/sassy-ankit/learning-webpack#readme",
+	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.2",
+		"babel-preset-env": "^1.6.1",
+		"css-loader": "^0.28.9",
+		"style-loader": "^0.20.1",
+		"webpack": "^2.2.0-rc.0"
+	}
+}
