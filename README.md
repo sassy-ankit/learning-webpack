@@ -26,14 +26,14 @@ Bare minimum configuration to get Webpack up and running
     }
   };
   ```
-* Now, to run webpack, you need to write a simple script in `package.json` file
+4. Now, to run webpack, you need to write a simple script in `package.json` file
   ```sh
   "scripts": {
       "build": "webpack"
     },
   ```
 
-* That's it! Now you will get a newly file in `dist` folder named `bundle.app.js` which can be used as a single file instead all different modules/files.
+5. That's it! Now you will get a newly file in `dist` folder named `bundle.app.js` which can be used as a single file instead all different modules/files.
 
 ---
 
@@ -43,7 +43,7 @@ Bare minimum configuration to get Webpack up and running
 
 Loaders are commonly used for transpiling ES2015/ES6 code to older ES5 code (which is supported by all the browsers). Also css, images and all different types of files can be handled with the help of 'module loaders'.
 
-* Lets start with first commonly used loader `babel-loader`:
+I) Lets start with first commonly used loader `babel-loader`:
   * `babel-loader` is used to transpile js files from ES2015/ES6 to ES5.
   * We need three seperate module to get babel working in webpack viz. `babel-loader`, `babel-core` and `babel-present-env`
 
@@ -93,14 +93,25 @@ Loaders are commonly used for transpiling ES2015/ES6 code to older ES5 code (whi
     ```
 
   * Also we need to instruct `babel` on how to convert `js` code, we need to create a file in root directory, named `.babelrc` and add the following code to it
-
     ```sh
-    A
+    {
+      "preset": ["babel-preset-env"]
+    }
     ```
+  Whenever babel loads up, it is going to look up to `.babelrc` file and find present defined here, after that it look for the `babel-preset-env` module installed and will run to set the rules (as loader) inside the `.js` file in our code base 
 
-* Second commonly used loader
-* Third commonly used loader
-* Forth commonly used loader
+  * Now, to run webpack, you need to write a simple script in `package.json` file
+  ```sh
+  "scripts": {
+    "build": "webpack"
+  }
+  ```
+
+  * That's it! Now you will get a newly file in `dist` folder named `bundle.app.js` which can be used as a single file instead all different modules/files.
+
+II) Second commonly used loader
+III) Third commonly used loader
+IV)  Forth commonly used loader
 
 ---
 

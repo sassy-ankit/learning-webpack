@@ -1,7 +1,7 @@
 {
-	"name": "001-getting_started",
+	"name": "002-loaders_basics",
 	"version": "1.0.0",
-	"description": "Getting started with webpack",
+	"description": "Getting started with loader",
 	"main": "app.js",
 	"scripts": {
 		"build": "webpack && node dist/bundle.app.js"
@@ -18,6 +18,9 @@
 	},
 	"homepage": "https://github.com/sassy-ankit/learning-webpack#readme",
 	"devDependencies": {
+		"babel-core": "^6.26.0",
+		"babel-loader": "^7.1.2",
+		"babel-preset-env": "^1.6.1",
 		"webpack": "^2.2.0-rc.0"
 	}
 }
