@@ -14,7 +14,7 @@ Bare minimum configuration to get Webpack up and running
    `$ npm install webpack --save-dev` or
    in short-hand `$ npm i webpack -D`
 
-  For more details, [click here] (repo/blob/master/001-getting_started/README.md)
+  For more details, [click here](001-getting_started/README.md)
 
 ---
 
@@ -25,8 +25,7 @@ Bare minimum configuration to get Webpack up and running
 Loaders are commonly used for transpiling ES2015/ES6 code to older ES5 code (which is supported by all the browsers). Also css, images and all different types of files can be handled with the help of 'module loaders'.
 
 I) Lets start with first commonly used loader `babel-loader`:
-  For more details, [click here] (repo/blob/master/002-loaders_basics/README.md)
-[a relative link](other_file.md)
+  For more details, [click here](002-loaders_basics/README.md)
 
 ---
 

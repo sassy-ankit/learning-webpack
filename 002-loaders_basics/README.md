@@ -4,7 +4,7 @@
 
 Loaders are commonly used for transpiling ES2015/ES6 code to older ES5 code (which is supported by all the browsers). Also css, images and all different types of files can be handled with the help of 'module loaders'.
 
-I) Lets start with first commonly used loader `babel-loader`:
+**Lets start with first commonly used loader `babel-loader`:**
   * `babel-loader` is used to transpile js files from ES2015/ES6 to ES5.
   * We need three seperate module to get babel working in webpack viz. `babel-loader`, `babel-core` and `babel-present-env`
 
@@ -16,9 +16,16 @@ I) Lets start with first commonly used loader `babel-loader`:
 
       `$ npm i -D webpack babel-loader babel-core babel-preset-env`
 
-  * **SIDE NOTE:** In Webpack 1, loaders were referred as loaders only but from Webpack 2+, loaders are referred are module rules. Thus, in webpack config file, loader are defined as follows:
-
-    ```sh
+  * **SIDE NOTE:** 
+    * In Webpack 1, loaders were referred as loaders only but from Webpack 2+, loaders are referred are module rules. 
+    * The different between `import` and `export` in CommonJS and ES2015/ES6
+| Action | CommonJS | ES2015/ES6 |
+| :---: | :---: | :---: |
+| Import a module | `const sum = require('./sum');` | `import sum from './sum';` |
+| Export some code | `module.exports = sum;` | `export default sum;` |
+     
+  Thus, in webpack config file, loader are defined as follows:
+    ```javascript
     module: {
       rules: [
         //Several different loaders are designated as array elements
@@ -27,8 +34,7 @@ I) Lets start with first commonly used loader `babel-loader`:
     ```
 
   * For babel-loader, your `webpack.config.js` file should look like this
-
-    ```sh
+    ```javascript
     var path = require('path');
     const config = {
       entry: './src/app.js',
@@ -54,7 +60,7 @@ I) Lets start with first commonly used loader `babel-loader`:
     ```
 
   * Also we need to instruct `babel` on how to convert `js` code, we need to create a file in root directory, named `.babelrc` and add the following code to it
-    ```sh
+    ```javascript
     {
       "preset": ["babel-preset-env"]
     }
@@ -62,7 +68,7 @@ I) Lets start with first commonly used loader `babel-loader`:
   Whenever babel loads up, it is going to look up to `.babelrc` file and find present defined here, after that it look for the `babel-preset-env` module installed and will run to set the rules (as loader) inside the `.js` file in our code base 
 
   * Now, to run webpack, you need to write a simple script in `package.json` file
-  ```sh
+  ```javascript
   "scripts": {
     "build": "webpack"
   }

@@ -7,8 +7,7 @@ Bare minimum configuration to get Webpack up and running
    in short-hand `$ npm i webpack -D`
 2. Create a `webpack.config.js` file in root redirectory
 3. Bare minimum configuration to get up webpack running in `webpack.config.js`
-
-```sh
+```javascript
 var path = require('path');
 module.exports = config = {
 	entry: './src/app.js',      // This should match with 'main' file in 'package.json'
@@ -21,8 +20,7 @@ module.exports = config = {
 ```
 
 4. Now, to run webpack, you need to write a simple script in `package.json` file
-
-```sh
+```javascript
 "scripts": {
 		"build": "webpack"
 	},
