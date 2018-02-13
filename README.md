@@ -29,9 +29,23 @@ I) Lets start with first commonly used loader `babel-loader`:
 
 ---
 
-## Chapter 3 - Module Loaders (Handling CSS)
-j
+## Chapter 3 - Module Loaders - Handling CSS (Bundling CSS into JS file)
+
+* We need two seperate module to handle CSS in webpack viz. `css-loader` and `style-loader`
+
+For more details, [click here](003-loader_handling_CSS_part-1/README.md)
+
+---
+
+## Chapter 4 - Module Loaders - Handling CSS (bundling CSS into a separate CSS file)
+
+* In the second part of HANDLING CSS, we will tweak the build process to ...
+
+For more details, [click here](004-loader_handling_CSS_part-2/README.md)
 
 ---
 
 Learning in Progress!! Visit regular to check
+
+**TO DO:**
+* Add SECTION LINKS to each chapter at the end
