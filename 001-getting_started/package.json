@@ -1,0 +1,14 @@
+{
+	"name": "001-getting_started",
+	"version": "1.0.0",
+	"description": "",
+	"main": "src/app.js",
+	"scripts": {
+		"wp-build": "webpack && node dist/bundle.app.js"
+	},
+	"author": "Ankitkumar Chheda",
+	"license": "ISC",
+	"devDependencies": {
+		"webpack": "^2.2.0-rc.0"
+	}
+}
